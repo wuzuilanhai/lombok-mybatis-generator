@@ -1,8 +1,5 @@
 package com.biubiu.annotation;
 
-import java.util.Collection;
-import java.util.Collections;
-
 /**
  * Created by zhanghaibiao on 2017/10/24.
  */
@@ -42,13 +39,6 @@ public enum SupportedLombokAnnotations {
                 return annotation;
         }
         return null;
-    }
-
-    public static Collection<SupportedLombokAnnotations> getDependencies(SupportedLombokAnnotations annotation) {
-        if (annotation == ALL_ARGS_CONSTRUCTOR)
-            return Collections.singleton(NO_ARGS_CONSTRUCTOR);
-        else
-            return Collections.emptyList();
     }
 
 }

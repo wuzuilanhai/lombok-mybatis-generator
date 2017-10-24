@@ -31,7 +31,6 @@ public class LombokPlugin extends PluginAdapter {
                 SupportedLombokAnnotations annotation = SupportedLombokAnnotations.getValueOf(alias);
                 if (annotation != null) {
                     annotations.add(annotation);
-                    annotations.addAll(SupportedLombokAnnotations.getDependencies(annotation));
                 }
             }
         }
